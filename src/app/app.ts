@@ -7,19 +7,13 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
+ protected readonly title = signal('ElectroShop');
   //part2
-  protected readonly title = signal('ElectroShop');
-
 storeName: string = "ElectroShop";
-
 storeDescription: string = "Your favorite electronics store";
-
 storeAddress: string = "Amman, Jordan";
-
 totalProducts: number = 12;
-
 isStoreOpen: boolean = true;
-
 currency: string = "USD";
 //part3
 productNames: string[] = [
@@ -29,7 +23,6 @@ productNames: string[] = [
   "Smart Watch",
   "Keyboard"
 ];
-
 productPrices: number[] = [
   750,
   450,
